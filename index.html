@@ -16,19 +16,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Fonts + styles -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="canonical" href="#">
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
+  <table style="max-width:800px;margin:0 auto;">
     <tr>
       <td style="padding:0">
-        <!-- HEADER -->
-        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
+        <!-- ========== HEADER ========== -->
+        <table class="section-pad">
           <tr>
-            <td style="padding:2.5%;width:60%;vertical-align:middle">
+            <td style="width:60%;vertical-align:middle">
               <h1 class="page-name">Furkan Turan Koyun</h1>
 
               <p>
@@ -53,16 +52,16 @@
               </p>
             </td>
 
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <img style="width:100%;max-width:100%;object-fit:cover;border-radius:50%;" alt="profile photo" src="images/headshot.jpg">
+            <td style="width:40%;max-width:40%;padding:2.5%;">
+              <img class="rounded" alt="profile photo" src="images/headshot.jpg" style="width:100%;max-width:100%;height:auto;">
             </td>
           </tr>
         </table>
 
-        <!-- RESEARCH INTERESTS -->
-        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
+        <!-- ========== RESEARCH INTERESTS ========== -->
+        <table class="section-pad">
           <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
+            <td style="width:100%;">
               <h2>Research Interests</h2>
               <p>
                 My research goal is to integrate artificial intelligence with mechanical engineering, robotics, and design workflows
@@ -82,158 +81,132 @@
           </tr>
         </table>
 
-        <!-- PUBLICATIONS -->
-        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
+        <!-- ========== PUBLICATIONS ========== -->
+        <table class="section-pad">
           <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
+            <td style="width:100%;">
               <h2>Publications</h2>
               <p>Selected work below. For the full list, see my <a href="https://scholar.google.com.tr/citations?user=hYMF87oAAAAJ&hl=en">Google Scholar</a>.</p>
             </td>
           </tr>
         </table>
 
-        <table style="width:100%;border:0;border-spacing:0 10px;border-collapse:separate;margin:0 auto;">
-          <!-- Publication 1 -->
+        <table style="border-spacing:0 10px;">
+          <!-- Pub 1 -->
           <tr>
-            <td style="padding:16px;width:25%;vertical-align:middle;min-width:120px">
-              <img src="images/p1.png" alt="IJCST paper image" style="width:auto;height:auto;max-width:100%;">
+            <td class="pub-img-cell">
+              <img src="images/p1.png" alt="IJCST paper image" class="thumb">
             </td>
-            <td style="padding:8px;width:75%;vertical-align:middle">
-              <span class="papertitle">Innovative 3D-Printed Surfaces for Efficient Water Harvesting from Air</span>
-              <br>
-              F. T. Koyun, S. Sabur, G. Başal, H. Günerhan
-              <br>
-              <em>International Journal of Clothing Science and Technology</em>, 2024
-              <br>
+            <td class="pub-text-cell">
+              <span class="papertitle">Innovative 3D-Printed Surfaces for Efficient Water Harvesting from Air</span><br>
+              F. T. Koyun, S. Sabur, G. Başal, H. Günerhan<br>
+              <span class="item-meta">International Journal of Clothing Science and Technology, 2024</span><br>
               <a href="https://doi.org/10.1108/IJCST-02-2024-0050">paper</a>
-              <p></p>
               <p>Design and experimental validation of 3D-printed smart surfaces that capture water from fog/condensation.</p>
             </td>
           </tr>
 
-          <!-- Publication 2 -->
+          <!-- Pub 2 -->
           <tr>
-            <td style="padding:16px;width:25%;vertical-align:middle;min-width:120px">
-              <img src="images/med-llm.jpg" alt="LLM healthcare image" style="width:auto;height:auto;max-width:100%;">
+            <td class="pub-img-cell">
+              <img src="images/med-llm.jpg" alt="LLM healthcare image" class="thumb">
             </td>
-            <td style="padding:8px;width:75%;vertical-align:middle">
-              <span class="papertitle">Generative AI and LLM Chatbots in Medical Applications</span>
-              <br>
-              F. T. Koyun, T. Çalışkan, A. Onan, S. Ö. Korkut
-              <br>
-              <em>Work in progress</em>, 2025
-              <p></p>
+            <td class="pub-text-cell">
+              <span class="papertitle">Generative AI and LLM Chatbots in Medical Applications</span><br>
+              F. T. Koyun, T. Çalışkan, A. Onan, S. Ö. Korkut<br>
+              <span class="item-meta">Work in progress, 2025</span>
               <p>Use cases, risks, and evaluation frameworks for generative AI assistants in healthcare settings.</p>
             </td>
           </tr>
 
-          <!-- Publication 3 (Thesis) -->
+          <!-- Pub 3 -->
           <tr>
-            <td style="padding:16px;width:25%;vertical-align:middle;min-width:120px">
-              <img src="images/thesis.jpg" alt="Thesis image" style="width:auto;height:auto;max-width:100%;">
+            <td class="pub-img-cell">
+              <img src="images/thesis.jpg" alt="Thesis image" class="thumb">
             </td>
-            <td style="padding:8px;width:75%;vertical-align:middle">
-              <span class="papertitle">The Effect of Prompt Engineering on the Performance of Large Language Models in Engineering and Design Tasks</span>
-              <br>
-              F. T. Koyun
-              <br>
-              <em>Work in progress</em>, 2025
-              <p></p>
-              <p>
-                Studying how prompt design affects LLM performance on domain-specific engineering tasks, including
-                multimodal mechanism reasoning, RAG over industrial knowledge, and lightweight fine-tuning (LoRA/PEFT).
-              </p>
+            <td class="pub-text-cell">
+              <span class="papertitle">The Effect of Prompt Engineering on the Performance of Large Language Models in Engineering and Design Tasks</span><br>
+              F. T. Koyun<br>
+              <span class="item-meta">Work in progress, 2025</span>
+              <p>Studying how prompt design affects LLM performance on domain-specific engineering tasks, including multimodal mechanism reasoning, RAG over industrial knowledge, and lightweight fine-tuning (LoRA/PEFT).</p>
             </td>
           </tr>
         </table>
 
-        <!-- PROJECTS -->
+        <!-- ========== PROJECTS ========== -->
         <br><br><br>
-        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
+        <table class="section-pad">
           <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Projects</h2>
-              <p>A few recent projects and demos.</p>
+            <td><h2>Projects</h2><p>A few recent projects and demos.</p></td>
+          </tr>
+        </table>
+
+        <table>
+          <!-- Project: RAG for SAP -->
+          <tr>
+            <td class="proj-img-cell">
+              <img src="images/rag.jpg" alt="RAG SAP" class="thumb">
+            </td>
+            <td class="proj-text-cell">
+              <h3 class="item-title">RAG for SAP Transaction Assistance</h3>
+              <div class="item-meta">industrial demo</div>
+              <div class="item-links">
+                <a href="#">paper</a> /
+                <a href="#">code</a> /
+                <a href="#">project</a>
+              </div>
+              <p>Lightweight retrieval + prompt engineering for operator guidance; optimized for latency and accuracy.</p>
+            </td>
+          </tr>
+
+          <!-- Project: Microsoft Sustainability Manager -->
+          <tr>
+            <td class="proj-img-cell">
+              <img src="images/microsoft-sustainability.jpg" alt="Microsoft Sustainability Manager" class="thumb">
+            </td>
+            <td class="proj-text-cell">
+              <h3 class="item-title">Microsoft Sustainability Manager – SAP Integration</h3>
+              <div class="item-meta">industrial project</div>
+              <div class="item-links">
+                <a href="https://www.microsoft.com/en-us/sustainability/microsoft-sustainability-manager">product link</a>
+              </div>
+              <p>Led the integration of SAP modules with Microsoft Sustainability Manager, enabling automated carbon data tracking and sustainability reporting for enterprise clients.</p>
+            </td>
+          </tr>
+
+          <!-- Project: Mobile App -->
+          <tr>
+            <td class="proj-img-cell">
+              <img src="images/psych-app.jpg" alt="mobile psychology app" class="thumb">
+            </td>
+            <td class="proj-text-cell">
+              <h3 class="item-title">Mobile Psychology App (Contributor)</h3>
+              <div class="item-meta">mobile • shipped</div>
+              <div class="item-links"><a href="#">app</a></div>
+              <p>Collaborated with psychologists to explore and test personalized LLM chat features (name intentionally omitted).</p>
+            </td>
+          </tr>
+
+          <!-- Project: EV -->
+          <tr>
+            <td class="proj-img-cell">
+              <img src="images/elektromobil1.png" alt="Elektromobil Project" class="thumb">
+            </td>
+            <td class="proj-text-cell">
+              <h3 class="item-title">Electric Vehicle Design Project</h3>
+              <div class="item-meta">competition • concept design</div>
+              <p>Conceptual high-efficiency EV for a national university competition. Led mechanical design,
+                chassis/suspension layout and basic aerodynamic studies in SolidWorks &amp; ANSYS, focusing on lightweight structures and efficiency.</p>
             </td>
           </tr>
         </table>
 
-        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-  
-          <!-- Project 2 -->
+        <!-- ========== FOOTER ========== -->
+        <table>
           <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="images/rag.jpg" alt="RAG SAP" style="width:auto;height:auto;max-width:100%;">
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>RAG for SAP Transaction Assistance</h3>
+            <td class="footer">
               <br>
-              <em>industrial demo</em>
-              <br>
-              <a href="#">paper</a> /
-              <a href="#">code</a> /
-              <a href="#">project</a>
-              <p></p>
-              Lightweight retrieval + prompt engineering for operator guidance; optimized for latency and accuracy.
-            </td>
-          </tr>
-          
-                    <!-- Project 2 -->
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="images/microsoft-sustainability.jpg" alt="Microsoft Sustainability Manager" style="width:auto;height:auto;max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>Microsoft Sustainability Manager – SAP Integration</h3>
-              <br>
-              <em>industrial project</em>
-              <br>
-              <a href="https://www.microsoft.com/en-us/sustainability/microsoft-sustainability-manager">product link</a>
-              <p></p>
-              Led the integration of SAP modules with Microsoft Sustainability Manager, enabling automated carbon data tracking and sustainability reporting for enterprise clients.
-            </td>
-            
-          <!-- Project 3 -->
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="images/psych-app.jpg" alt="mobile psychology app" style="width:auto;height:auto;max-width:100%;">
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>Mobile Psychology App (Contributor)</h3>
-              <br>
-              <em>mobile • shipped</em>
-              <br>
-              <a href="#">app</a>
-              <p></p>
-              Collaborated with psychologists to explore and test personalized LLM chat features (name intentionally omitted).
-            </td>
-          </tr>
-
-          <!-- Project 4: Elektromobil -->
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="images/elektromobil1.png" alt="Elektromobil Project" style="width:auto;height:auto;max-width:100%;">
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>Electric Vehicle Design Project</h3>
-              <br>
-              <em>competition • concept design</em>
-              <p></p>
-              Conceptual high-efficiency EV for a national university competition. Led mechanical design,
-              chassis/suspension layout and basic aerodynamic studies in SolidWorks &amp; ANSYS, focusing on lightweight
-              structures and efficiency.
-            </td>
-          </tr>
-        </table>
-
-        <!-- FOOTER -->
-        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-          <tr>
-            <td style="padding:0">
-              <br>
-              <p style="text-align:center;font-size:small;">
-                Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a>
-              </p>
+              Design and source code from <a href="https://jonbarron.info">Jon Barron's website</a>
             </td>
           </tr>
         </table>
