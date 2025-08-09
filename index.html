@@ -250,3 +250,41 @@
     </tr>
   </tbody>
 </table>
+
+<!-- Conference Entry 2 -->
+<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tbody>
+    <tr onmouseout="conf2_stop()" onmouseover="conf2_start()">
+      <!-- Left: Image -->
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id="conf2_image">
+            <img src="images/kongre2.png" width="100%">
+          </div>
+          <img src="images/kongre2.png" width="100%">
+        </div>
+        <script type="text/javascript">
+          function conf2_start() {
+            document.getElementById('conf2_image').style.opacity = "1";
+          }
+          function conf2_stop() {
+            document.getElementById('conf2_image').style.opacity = "0";
+          }
+          conf2_stop();
+        </script>
+      </td>
+
+      <!-- Right: Conference text -->
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <span class="papertitle">Nanocomposite Structure for Oil/Water Separation</span>
+        <br>
+        Oral, N., Koyun, F. T., Başal, G.
+        <br>
+        <em>V. International Ege Composite Materials Symposium</em>, 2021 &nbsp; <font color="red"><strong>(Conference Presentation)</strong></font>
+        <p>
+          This study presents a composite membrane system made from cellulose acetate nanofibers and PNIPAM hydrogel particles via electrospinning and electrospraying. The developed multilayer membrane efficiently separated water from oil-water mixtures using gravity-driven filtration.
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
