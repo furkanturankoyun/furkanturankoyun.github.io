@@ -213,6 +213,44 @@
   </tbody>
 </table>
 
+<!-- Work-in-Progress Entry -->
+<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tbody>
+    <tr onmouseout="wip_stop()" onmouseover="wip_start()">
+      <!-- Left: Image -->
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id="wip_image">
+            <img src="images/zero1.png" width="100%">
+          </div>
+          <img src="images/zero1.png" width="100%">
+        </div>
+        <script type="text/javascript">
+          function wip_start() {
+            document.getElementById('wip_image').style.opacity = "1";
+          }
+          function wip_stop() {
+            document.getElementById('wip_image').style.opacity = "0";
+          }
+          wip_stop();
+        </script>
+      </td>
+
+      <!-- Right: Work-in-Progress text -->
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <span class="papertitle">Revolutionizing Healthcare: The Role of Generative AI and Large Language Model Chatbots in Medical Applications</span>
+        <br>
+        Koyun, F. T., Çalışkan, T., Onan, A., Korkut, S. Ö.
+        <br>
+        <em>(Work-in-Progress)</em>, 2025
+        <p>
+          An ongoing research exploring the integration of generative AI and LLM-based chatbots into medical applications, aiming to enhance diagnostic support, patient engagement, and healthcare accessibility.
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 <!-- Conference Entry -->
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
   <tbody>
