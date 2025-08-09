@@ -212,3 +212,41 @@
     </tr>
   </tbody>
 </table>
+
+<!-- Conference Entry -->
+<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tbody>
+    <tr onmouseout="conf_stop()" onmouseover="conf_start()">
+      <!-- Left: Image -->
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id="conf_image">
+            <img src="images/kongre1.png" width="100%">
+          </div>
+          <img src="images/kongre1.png" width="100%">
+        </div>
+        <script type="text/javascript">
+          function conf_start() {
+            document.getElementById('conf_image').style.opacity = "1";
+          }
+          function conf_stop() {
+            document.getElementById('conf_image').style.opacity = "0";
+          }
+          conf_stop();
+        </script>
+      </td>
+
+      <!-- Right: Conference text -->
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <span class="papertitle">3D Printed Smart Surfaces for Water Harvesting from Air</span>
+        <br>
+        Koyun, F. T., Başal, G.
+        <br>
+        <em>International Congress on Sustainability and Technological Developments in Textiles</em>, 2023 &nbsp; <font color="red"><strong>(Conference Presentation)</strong></font>
+        <p>
+          Presentation on innovative 3D-printed smart surfaces designed for efficient atmospheric water harvesting, focusing on material design and surface engineering approaches in textiles.
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
