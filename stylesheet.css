@@ -1,31 +1,23 @@
-/* ---------- Base type (Junwon Seo tarzı, ferah) ---------- */
+/* ---- Typography ---- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 :root{
-  --text: #111;
-  --muted: #666;
-  --link: #1772d0;
-  --link-hover: #f09228;
-  --maxw: 900px;
-  --body-size: 18px;          /* temel metin */
-  --lh: 1.6;
-  --h1: 44px;
-  --h2: 30px;
-  --h3: 20px;
+  --maxw: 800px;
+  --base: 18px;         /* body text */
+  --h1: 48px;           /* name */
+  --h2: 28px;           /* section headings */
 }
 
-html,body{
-  margin:0;
-  padding:0;
-  color:var(--text);
+html, body { margin:0; padding:0; }
+body{
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-size: var(--base);
+  line-height: 1.6;
+  color:#111;
   background:#fff;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
-               Roboto, Helvetica, Arial, "Apple Color Emoji",
-               "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-size: var(--body-size);
-  line-height: var(--lh);
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
 }
 
+/* container */
 .container{
   width:100%;
   max-width: var(--maxw);
@@ -33,108 +25,66 @@ html,body{
   padding: 0 16px;
 }
 
-a{ color:var(--link); text-decoration:none; }
-a:hover, a:focus{ color:var(--link-hover); text-decoration:none; }
+/* Links */
+a{ color:#1772d0; text-decoration:none; }
+a:hover, a:focus{ color:#f09228; text-decoration:none; }
 
+/* Tables (Jon Barron tarzı yerleşim) */
+table{ width:100%; border:0; border-spacing:0 14px; border-collapse:separate; margin:0 auto; }
+td{ vertical-align: top; }
+
+/* Header */
 .page-name{
-  font-weight:700;
   font-size: var(--h1);
+  font-weight: 700;
   margin: 0 0 8px 0;
-  line-height: 1.1;
 }
 
+/* Section titles */
 h2{
-  font-weight:700;
   font-size: var(--h2);
-  margin: 0 0 8px 0;
-  line-height:1.2;
+  font-weight: 700;
+  margin: 24px 0 12px;
 }
 
-h3{
-  font-weight:600;
-  font-size: var(--h3);
-  margin: 0 0 4px 0;
-}
+/* Paper / project satırları */
+.papertitle{ font-weight: 700; font-size: 20px; }
+.item-title{ font-weight: 700; font-size: 20px; margin: 0; }
+.item-meta{ color:#444; font-style: italic; margin: 4px 0 8px; }
 
-p{ margin: 10px 0; }
-ul{ margin: 8px 0 0 22px; }
-em{ color: var(--muted); }
+/* Görseller */
+img.rounded{ border-radius:50%; object-fit:cover; }
+img.thumb{ width:100%; height:auto; border-radius:6px; display:block; }
 
-/* ---------- Layout tables (Barron stilini koruyarak) ---------- */
-.block-table{
-  width:100%;
-  border:0;
-  border-spacing:0;
-  border-collapse:separate;
-  margin:0 auto;
-}
-.list-table{
-  width:100%;
-  border:0;
-  border-spacing:0 14px;      /* satırlar arası boşluk */
-  border-collapse:separate;
-  margin:0 auto;
-}
-
-.links{
-  text-align:center;
-  font-size: 0.95em;
-}
-
-/* ---------- Images ---------- */
-.headshot{
-  width:100%;
-  max-width: 320px;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  border-radius: 50%;
-  display:block;
-  margin-left:auto;
-}
-
-.thumb-cell{
+/* Görsel hücreleri — resimlerin büyümemesi için sert sınır */
+.pub-img-cell, .proj-img-cell{
   padding:16px;
   width:25%;
   min-width:120px;
-  vertical-align:middle;
+  max-width: 280px;      /* <<< büyük görsel sorunu çözümü */
 }
-.desc-cell{
-  padding:8px 16px 8px 8px;
-  width:75%;
-  vertical-align:middle;
-}
-
-.thumb{
+.pub-img-cell img, .proj-img-cell img{
+  max-width: 280px;
   width:100%;
   height:auto;
-  max-width:280px;   /* ← büyük resim sorununu çözer */
-  display:block;
-  border-radius: 6px;
 }
 
-.papertitle{
-  font-weight:700;
-}
+/* Metin hücreleri */
+.pub-text-cell{ padding:8px 16px 8px 8px; width:75%; }
+.proj-text-cell{ padding:16px; width:75%; }
 
-/* spacing helpers */
-.spacer{ height: 32px; }
+/* Bölüm içi padding */
+.section-pad td{ padding: 2.5%; }
 
-/* footer */
-.footer{
-  margin-top: 40px;
-  text-align:center;
-  color: var(--muted);
-  font-size: 0.9em;
-}
-.footer a{ font-size: inherit; }
+/* Footer */
+.footer { text-align:center; font-size: 14px; margin-top: 40px; color:#555; }
 
-/* ---------- Responsive tweaks ---------- */
-@media (max-width: 640px){
-  :root{
-    --body-size: 16px;
-    --h1: 34px;
-    --h2: 24px;
-  }
-  .thumb{ max-width: 240px; }
-  .links{ font-size: 0.9em; }
+/* Responsive */
+@media (max-width: 680px){
+  :root{ --h1: 38px; --h2: 24px; --base: 17px; }
+  table{ border-spacing:0 10px; }
+  .pub-img-cell, .proj-img-cell,
+  .pub-text-cell, .proj-text-cell { width:100%; display:block; max-width:100%; }
+  .pub-img-cell img, .proj-img-cell img{ max-width: 240px; }
+  .footer{ margin-top:28px; }
 }
