@@ -154,3 +154,44 @@
     </tr>
   </tbody>
 </table>
+
+
+<!-- Publication Entry -->
+<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tbody>
+    <tr onmouseout="water_stop_pub()" onmouseover="water_start_pub()">
+      <!-- Left: Image -->
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id="water_image_pub">
+            <img src="images/water.png" width="100%">
+          </div>
+          <img src="images/water.png" width="100%">
+        </div>
+        <script type="text/javascript">
+          function water_start_pub() {
+            document.getElementById('water_image_pub').style.opacity = "1";
+          }
+          function water_stop_pub() {
+            document.getElementById('water_image_pub').style.opacity = "0";
+          }
+          water_stop_pub();
+        </script>
+      </td>
+
+      <!-- Right: Publication text -->
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <span class="papertitle">Innovative 3D-printed surfaces for efficient water harvesting from air</span>
+        <br>
+        Furkan Turan Koyun, Sema Sabur, Güldemet Başal, Hüseyin Günerhan
+        <br>
+        <em>International Journal of Clothing Science and Technology</em>, Vol. 37, No. 4, pp. 698-708, 2025 &nbsp; <font color="red"><strong>(Journal Article)</strong></font>
+        <br>
+        <a href="https://doi.org/10.1108/IJCST-XX-XXXX-XXXX">journal page</a>
+        <p>
+          The purpose of this study is to develop nature-inspired 3D surfaces for atmospheric water harvesting. Cylindrical, conical, and tree-shaped protrusions were 3D-printed and coated with hydrophilic nano-scale particles and fibers using electrospraying techniques. Wettability patterns were varied, and the water collection rates and capacities of these surfaces were evaluated.
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
