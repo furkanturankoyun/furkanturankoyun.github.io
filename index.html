@@ -111,30 +111,30 @@
   </tbody>
 </table>
 
-<!-- Publication Entry with Image -->
+<!-- Publication Entry -->
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
   <tbody>
-    <tr onmouseout="ever_stop()" onmouseover="ever_start()">
-      <!-- Left: Image -->
+    <tr onmouseout="ever_stop_pub()" onmouseover="ever_start_pub()">
+      <!-- Left: Image with hover effect -->
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <div class="two" id="ever_image">
+          <div class="two" id="ever_image_pub">
             <img src="images/ever_after.png" width="100%">
           </div>
           <img src="images/ever_before.png" width="100%">
         </div>
         <script type="text/javascript">
-          function ever_start() {
-            document.getElementById('ever_image').style.opacity = "1";
+          function ever_start_pub() {
+            document.getElementById('ever_image_pub').style.opacity = "1";
           }
-          function ever_stop() {
-            document.getElementById('ever_image').style.opacity = "0";
+          function ever_stop_pub() {
+            document.getElementById('ever_image_pub').style.opacity = "0";
           }
-          ever_stop();
+          ever_stop_pub();
         </script>
       </td>
 
-      <!-- Right: Text -->
+      <!-- Right: Publication text -->
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://half-potato.gitlab.io/posts/ever/">
           <span class="papertitle">EVER: Exact Volumetric Ellipsoid Rendering for Real-time View Synthesis</span>
